@@ -770,6 +770,7 @@ body.dark .work-links img {
   padding: var(--gutter-medium) var(--gutter-small);
   border-radius: var(--gutter-nano);
   background-color: var(--bg-color-secondary);
+  margin-bottom: 3.5%;
 }
 
 .article-textbox {
@@ -1052,7 +1053,7 @@ body.dark .work-links img {
   block-size: var(--gutter-nano);
   inline-size: var(--gutter-nano);
   border-radius: 50%;
-  background-color: red;
+  background-color: green;
   animation: blink 550ms alternate infinite var(--easing);
 }
 

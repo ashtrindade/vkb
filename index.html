@@ -10,711 +10,482 @@
   Embrace the guidance inscribed within the comments below to fashion an awe-inspiring portfolio of your own.
 -->
 
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
+<html lang="pt-br">
 
-    <!-- Read and update content attributes accordingly  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
 
-    <meta
-      name="description"
-      content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."
-    />
+  <!-- Read and update content attributes accordingly  -->
 
-    <!-- Google / Search Engine Tags -->
-<meta itemprop="name" content="Syed Mohsin's Portfolio">
-<meta itemprop="description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+  <meta name="description" content="Bem vinde ao portfolio de Viktor Bernardo Pinheiro - Serviços Editoriais" />
 
-<!-- Reference screenshot of updated site's header in place of content -->
-<meta itemprop="image" content="assets/images/sharing-card.png">
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Bernardo Pinheiro - Serviços Editoriais">
+  <meta itemprop="description" content="Bem vinde ao portfolio de Viktor Bernardo Pinheiro - Serviços Editoriais">
 
-<!-- Facebook Meta Tags -->
-<meta property="og:url" content="https://ossportfolio.netlify.app">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Syed Mohsin's Portfolio">
-<meta property="og:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+  <!-- Reference screenshot of updated site's header in place of content -->
+  <meta itemprop="image" content="assets/images/sharing-card.png">
 
-<!-- Reference screenshot of updated site's header in content -->
-<meta property="og:image" content="assets/images/sharing-card.png">
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://ossportfolio.netlify.app">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bernardo Pinheiro - Serviços Editoriais">
+  <meta property="og:description" content="Bem vinde ao portfolio de Viktor Bernardo Pinheiro - Serviços Editoriais">
 
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Syed Mohsin's Portfolio">
-<meta name="twitter:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+  <!-- Reference screenshot of updated site's header in content -->
+  <meta property="og:image" content="assets/images/sharing-card.png">
 
-<!-- Reference screenshot of updated site's header in content -->
-<meta name="twitter:image" content="assets/images/sharing-card.png">
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bernardo Pinheiro - Serviços Editoriais">
+  <meta name="twitter:description" content="Bem vinde ao portfolio de Viktor Bernardo Pinheiro - Serviços Editoriais">
+
+  <!-- Reference screenshot of updated site's header in content -->
+  <meta name="twitter:image" content="assets/images/sharing-card.png">
 
 
-<!-- Update favicon href attribute with image of yourself -->
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicons.png"
-      type="image/png"
-    />
+  <!-- Update favicon href attribute with image of yourself -->
+  <link rel="shortcut icon" href="assets/images/favicons.png" type="image/png" />
 
-    <!-- Preloading fonts for better performance -->
+  <!-- Preloading fonts for better performance -->
 
-    <link
-      rel="preload"
-      href="assets/fonts/Mona-Sans.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+  <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
 
-    <link rel="stylesheet" href="style.css"  />
-    <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 
-    <!-- Your name here -->
-    <title>Syed Mohsin's Portfolio</title>
-  </head>
+  <!-- Your name here -->
+  <title>Bernardo Pinheiro - Serviços Editoriais</title>
+</head>
 
-  <body>
+<body>
 
-    <script>
-      const theme = localStorage.getItem("theme") || "dark";
-      document.body.classList.add(theme);
-    </script>
+  <script>
+    const theme = localStorage.getItem("theme") || "dark";
+    document.body.classList.add(theme);
+  </script>
 
-    <header class="header">
+  <header class="header">
 
-      <div class="menu-btn-container">
-        <div class="container">
-          <button type="button"  class="menu-btn">menu</button>
+    <div class="menu-btn-container">
+      <div class="container">
+        <button type="button" class="menu-btn">menu</button>
+      </div>
+    </div>
+
+    <nav class="nav hidden">
+      <ol class="nav-items">
+        <li class="nav-item"><a href="#">Início</a></li>
+        <li class="nav-item"><a href="#work">Trabalhos</a></li>
+        <li class="nav-item"><a href="#blog">Artigos</a></li>
+        <li class="nav-item"><a href="#skills">Serviços</a></li>
+        <li class="nav-item">
+          <a href="#contact" data-focused="last-focused">Contato</a>
+        </li>
+      </ol>
+    </nav>
+
+    <div class="container">
+      <div class="header-textbox">
+        <!-- Replace with your name and job title -->
+        <h1 class="h1">
+          <span>Bernardo Pinheiro</span>
+        </h1>
+        <h3>
+          <span>Escritor, revisor e leitor sensível</span>
+        </h3>
+
+        <!-- Add a small introductory paragraph about yourself -->
+        <p class="header-text">Sou estudante de Letras na UFRJ, revisor, leitor sensível e escritor, e nas horas vagas
+          sofro pelo Vasco da Gama.</p>
+
+        <div class="header-btns">
+          <a href="#contact" class="btn btn-cta">Me contrate</a>
+          <a href="#work" class="btn btn-secondary">Ver trabalhos</a>
         </div>
       </div>
+    </div>
+  </header>
 
-      <nav class="nav hidden">
-        <ol class="nav-items">
-          <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#work">My Work</a></li>
-          <li class="nav-item"><a href="#blog">See Blog</a></li>
-          <li class="nav-item"><a href="#skills">My Skills</a></li>
-          <li class="nav-item">
-            <a href="#contact" data-focused="last-focused">Contact</a>
+  <main>
+    <!-- Trabalhos -->
+    <section class="work">
+      <div class="container">
+        <h2 class="h2" id="work">Trabalhos Realizados</h2>
+        <div class="work-boxes">
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Legado Selvagem</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">
+                por Larissa Cristal
+              </p>
+              <!-- Add technologies you used to build the project -->
+              <ol class="work-technologies">
+                <li>Revisão</li>
+              </ol>
+
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="https://amzn.to/3Qvdl3f/" target="_blank"
+                  rel="noopener" class="link">Disponível para compra
+                </a>
+              </div>
+            </div>
+
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/legado-selvagem.png" width="356"
+                alt="Capa do livro Legado Selvagem, de Larissa Cristal. Nela, duas garotas negras estão viradas de costas uma para a outra. A da esquerda usa um vestido branco com cinto cinza. Seu cabelo é longo e crespo. Ela segura uma espada prata com detalhes dourados. A da direita tem longas tranças escuras. Usa uma regata bege, calça preta e sapatos marrons. Ela está com os punhos erguidos em posição de luta. Ao fundo, há uma mata nublada e repleta de árvores sombrias. No topo, o nome do livro em letras brancas, e na parte inferior o nome da autora." />
+            </picture>
+          </div>
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Entre os morros de mandioquinha</h3>
+              <!-- Add small description of your project  -->
+
+              <p class="work-text">Por Narú Narizinho</p>
+              <ol class="work-technologies">
+                <li>Revisão</li>
+              </ol>
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="https://amzn.to/3CIZWkE/"
+                  target="_blank" rel="noopener" class="link">Disponível para compra
+                </a>
+              </div>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/entre-morros.png" width="356" alt="Capa do livro Entre os morros de Mandioquinha, de Narú Narizinho. 
+              A protagonista Charlie olha para a frente com uma expressão que remete a medo. Ela tem uma blusa de mangas longas e um macacão por cima,
+              está sentada em uma mesa com um prato de ovo e bacon, atrás de si estão os morros da cidade. Algumas flores acompanham a ilustração.
+              Acima de tudo está o título do livro: Entre os Morros de Mandioquinha." />
+            </picture>
+          </div>
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Artie & Rúbia</h3>
+              <!-- Add small description of your project  -->
+              <p class="work-text">Por Narú Narizinho</p>
+              <ol class="work-technologies">
+                <li>Revisão</li>
+              </ol>
+              <div class="work-links">
+                <!-- Add url of project in href attribute -->
+                <a href="https://amzn.to/4i7VScX/" target="_blank"
+                  rel="noopener" class="link">Disponível para compra
+                </a>
+              </div>
+            </div>
+            <!-- Update img src and alt attribute  -->
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/artie-rubia.png" width="356" alt="Capa do livro Artie & Rúbia, de Narú Narizinho.
+              Os braços das duas protagonistas aparecem brindando uma caipirinha de maracujá e um copo americano com cerveja.
+              A capa toda é ambientada em um bar, com várias mesinhas de plástico vermelhas. Abaixo de tudo está o título do livro." />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artigos -->
+    <section class="article">
+      <div class="container">
+        <h2 class="h2" id="blog">Meus Artigos</h2>
+        <div class="article-boxes">
+
+          <article class="article-box featured-article">
+            <div class="article-textbox">
+              <div>
+                <h3 class="h3">
+                  Guia para contratar um serviço literário
+                </h3>
+                <p class="article-text">
+                  Defina suas necessidades. Pesquise sobre os tipos de serviços literários e editoriais e descubra qual
+                  é a necessidades
+                  do seu projeto.
+                </p>
+              </div>
+              <div class="article-info">
+                <a href="https://www.instagram.com/p/DFpuFbZx6x8/" class="link" target="_blank" rel="noopener">Continue
+                  lendo</a>
+              </div>
+            </div>
+            <picture class="article-illustration">
+              <img src="assets/images/featured-blog.png" alt="Guia para contratar um serviço literário" loading="lazy" />
+            </picture>
+          </article>
+
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h3 class="h4">Como escrever personagens trans.</h3>
+                <p class="article-text">
+                  Saiba o que é (e o que não é) transgeneridade, saiba quais são os principais estereótipos, as
+                  principais lutas, os principais nomes.
+                </p>
+              </div>
+              <div class="article-info">
+                <a href="https://www.instagram.com/p/DFaiuUWOY4v/" class="link" target="_blank" rel="noopener">Continue
+                  lendo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h3 class="h4">
+                  Descrição de imagens.
+                </h3>
+                <p class="article-text">
+                  Sabendo o que é, qual a importância e como fazer a descrição de imagem, o próximo passo é postar!
+                </p>
+              </div>
+              <div class="article-info">
+                <a href="https://www.instagram.com/p/C_qJa0BxrfS" class="link" target="_blank" rel="noopener">Continue
+                  lendo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h3 class="h4">O uso do travessão.</h3>
+                <div class="article-text">
+                  Você, autore, sabe como utilizar o travessão no seu livro? Não?
+                </div>
+              </div>
+              <div class="article-info">
+                <a href="https://www.instagram.com/p/C0RYU86u7Bl" class="link" target="_blank" rel="noopener">Continue
+                  lendo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="skills">
+      <div class="container">
+        <h2 class="h2" id="skills">Serviços</h2>
+        <div class="article-boxes">
+
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h4 class="h4">Revisão</h4>
+                <div class="article-text">
+                  A revisão consiste na preparação de um texto para a circulação pública, visando interceptar erros
+                  ortográficos,
+                  inconstância temporal, vícios de linguagem e demais problemas que podem vir a interferir no fluxo da
+                  leitura e
+                  na qualidade da escrita.
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h4 class="h4">Leitura sensível</h4>
+                <div class="article-text">
+                  A leitura sensível tem o propósito de analisar a representação de uma minoria em uma história,
+                  buscando por incoerências,
+                  estereótipos ou preconceitos, de modo a corrigir e garantir uma representação adequada ao grupo.
+                  </br></br>
+                  Realizo leitura sensível para representação gay, transmasculina, arromântica e assexual.
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h4 class="h4">Adequação à Neolinguagem</h4>
+                <p class="article-text">
+                  A adequação à neolinguagem trabalha em conjunto com ê autore para utilizar o pronome neutro,
+                  usualmente quando há ume
+                  personagem não-binárie.
+                  </br></br>
+                  A precificação leva em consideração a complexidade do serviço e por isso deve ser feito um orçamento
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h4 class="h4">Texto Alternativo</h4>
+                <p class="article-text">
+                  O texto alternativo, também conhecido como descrição de imagem, é uma ferramenta de acessibilidade
+                  para pessoas cegas e baixa visão.
+                  </br></br>
+                  Meu serviço de descrição de imagens é válido para capas, imagens de divulgação e ilustrações de
+                  personagens,
+                  e pode ser adquirido como um extra aos serviços anteriores.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h4 class="h4">Antologias</h4>
+                <p class="article-text">
+                  Participei da organização de diversas antologias, todas voltadas para identidades LGBTQ+.
+                  </br></br>
+                  Na maioria das organizações, fui representante do coletivo LGBTQ+Spacey. Em todas realizei papéis
+                  envolvendo a
+                  organização de cronogramas, gestão das equipes envolvidas e divulgação.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Recomendações -->
+    <!-- <section>
+      <h2 class="h2">Recomendações</h2>
+      <div class="container">
+        <ol class="testimonials">
+
+          <li class="testimonial">
+            <blockquote class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </blockquote>
+            <figure class="testimonial-author">
+              <img src="assets/images/testimonials/rich-harris.png" alt="Rich Harris" loading="lazy" />
+              <figcaption>
+                <h3 class="testimonial-author-name">Lorem ipsum</h3>
+                <p class="testimonial-author-job">Lorem ipsum</p>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="testimonial">
+            <blockquote class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </blockquote>
+            <figure class="testimonial-author">
+              <img src="assets/images/testimonials/rich-harris.png" alt="Andrew Mead" loading="lazy" />
+              <figcaption>
+                <h3 class="testimonial-author-name">Lorem ipsum</h3>
+                <p class="testimonial-author-job">Lorem ipsum</p>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="testimonial">
+            <blockquote class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </blockquote>
+            <figure class="testimonial-author">
+              <img src="assets/images/testimonials/rich-harris.png" alt="Andrew Mead" loading="lazy" />
+              <figcaption>
+                <h3 class="testimonial-author-name">Lorem ipsum</h3>
+                <p class="testimonial-author-job">Lorem ipsum</p>
+              </figcaption>
+            </figure>
           </li>
         </ol>
-      </nav>
+      </div>
+    </section> -->
 
+    <!-- Contato -->
+    <section class="contact">
       <div class="container">
-        <div class="header-textbox">
-          <!-- Replace with your name and job title -->
-          <h1 class="h1">
-            <span>Hi, I'm Syed Mohsin</span>
-            <span>Frontend Web Developer</span>
-          </h1>
-
-          <!-- Add a small introductory paragraph about yourself -->
-          <p class="header-text">
-            A frontend software engineer and interface designer who builds UX
-            rich accessible and performant websites.
-          </p>
-
-          <div class="header-btns">
-            <a href="#contact" class="btn btn-cta">Hire me</a>
-            <a href="#work" class="btn btn-secondary">See my work</a>
+        <h2 class="h2" id="contact">Envie uma mensagem</h2>
+        <div class="contact-content">
+          <div class="contact-textbox">
+            <!-- Please comment this component if you're not available for hire -->
+            <strong href="#" class="hire-alert">
+              <span class="indicator"></span>
+              Agenda aberta
+            </strong>
+            <p class="contact-text">
+              04 vagas para revisão, leitura sensível ou adequação à neolinguagem nos meses de fevereiro e março.
+            </p>
+            <p class="contact-text">
+              As 02 primeiras pessoas a fecharem algum serviço acima de R$100 receberão 10% de desconto.
+            </p>
           </div>
+          <form action="#" class="contact-form" method="POST" netlify>
+            <div class="form-field">
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required inputmode="email" />
+            </div>
+            <div class="form-field">
+              <label for="message">Fale sobre o serviço desejado</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-cta">Enviar</button>
+          </form>
         </div>
       </div>
-    </header>
+    </section>
+  </main>
 
-    <main>
-      <section class="client">
-        <div class="container">
-          <h2 class="h2">Trusted by</h2>
-          <div class="logos">
-            <!-- Replace alt with client/company name and src attributes of images with path to relative img of client logo -->
-            <div class="logo-group">
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/stripe.svg"
-                alt="Ideacraft"
-                class="logo hide to-top"
-              />
-
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/datastax.svg"
-                alt="Golden grid"
-                class="logo"
-              />
-
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/coke.svg"
-                alt="Theia"
-                class="logo hide to-bottom"
-              />
-            </div>
-            <div class="logo-group">
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/gm.svg"
-                alt="General motors"
-                class="logo hide to-top"
-              />
-
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/shares.svg"
-                alt="Chippy"
-                class="logo"
-              />
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/shopify.svg"
-                alt="Shopify"
-                class="logo hide to-bottom"
-              />
-            </div>
-            <div class="logo-group">
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/agency-elevation.svg"
-                alt="Agency elevation"
-                class="logo hide to-top"
-              /><img
-                loading="lazy"
-                src="assets/images/trusted-by/gitlab.svg"
-                alt="Ron jones"
-                class="logo"
-              /><img
-                loading="lazy"
-                src="assets/images/trusted-by/duolingo.svg"
-                alt="Mighty furniture's"
-                class="logo hide to-bottom"
-              />
-            </div>
-            <div class="logo-group">
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/coyote.svg"
-                alt="Bulls eye"
-                class="logo hide to-top"
-              />
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/astrato.svg"
-                alt="Chippy"
-                class="logo"
-              />
-              <img
-                loading="lazy"
-                src="assets/images/trusted-by/mercado.svg"
-                alt="Fastlane"
-                class="logo hide to-bottom"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="work">
-        <div class="container">
-          <h2 class="h2" id="work">Selected Work</h2>
-          <div class="work-boxes">
-            <div class="work-box">
-              <div class="work-textbox">
-                <!-- Add your project title here -->
-                <h3 class="h3">portfolio template</h3>
-                <!-- Add small description of your project  -->
-                <p class="work-text">
-                  A free to use, minimal and accessible portfolio template for
-                  developers.
-                </p>
-                <!-- Add technologies you used to build the project -->
-                <ol class="work-technologies">
-                  <li>React</li>
-                  <li>Gatsby</li>
-                  <li>SCSS</li>
-                  <li>MDX</li>
-                </ol>
-
-                <div class="work-links">
-                  <!-- Add url of project in href attribute -->
-                  <a href="https://github.com/devsyedmohsin" target="_blank" rel="noopener" class="link"
-                    >Explore this project</a
-                  >
-
-                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                  <a
-                    href="https://github.com/devsyedmohsin"
-                    target="_blank"
-                    rel="noopener"
-                    title="Source code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-
-         <!-- Update img src and alt attribute  -->
-
-              <picture class="work-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/work/portfolio-template.webp"
-                  alt="agency elevation"
-                />
-              </picture>
-            </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <!-- Add your project title here -->
-                <h3 class="h3">agencyelevation.com</h3>
-                <!-- Add small description of your project  -->
-
-                <p class="work-text">Website for Agency Elevation.</p>
-                <ol class="work-technologies">
-                  <li>React</li>
-                  <li>Gatsby</li>
-                  <li>Material UI</li>
-                </ol>
-                <div class="work-links">
-                  <!-- Add url of project in href attribute -->
-                  <a href="#" target="_blank" rel="noopener" class="link"
-                    >Explore this project</a
-                  >
-
-                     <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                  <a
-                    href="http://github.com/devsyedmohsin"
-                    target="_blank"
-                    rel="noopener"
-                    title="Source code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-         <!-- Update img src and alt attribute  -->
-              <picture class="work-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/work/agency-elevation.webp"
-                  alt="portfolio template"
-                />
-              </picture>
-            </div>
-            <div class="work-box">
-              <div class="work-textbox">
-                <!-- Add your project title here -->
-                <h3 class="h3">contribute.dev</h3>
-                <!-- Add small description of your project  -->
-                <p class="work-text">
-                  Website for DevX A dedicated space for developer experience
-                </p>
-                <ol class="work-technologies">
-                  <li>Ruby</li>
-                  <li>SvelteKit</li>
-                  <li>Emotion</li>
-                </ol>
-                <div class="work-links">
-                  <!-- Add url of project in href attribute -->
-                  <a href="#" target="_blank" rel="noopener" class="link"
-                    >Explore this project</a
-                  >
-
-                   <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener"
-                    title="Source code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-         <!-- Update img src and alt attribute  -->
-              <picture class="work-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/work/contribute-dev.webp"
-                  alt="contribute dev"
-                />
-              </picture>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- I write blog posts on dev.to at https://dev.to/devsyedmohsin. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
-
-      <section class="article">
-        <div class="container">
-          <h2 class="h2" id="blog">My Articles</h2>
-          <div class="article-boxes">
-            <article class="article-box featured-article">
-              <div class="article-textbox">
-                <div>
-                  <h3 class="h3">
-                    22 Useful CSS Tips and Tricks Every Developer Should Know
-                  </h3>
-                  <p class="article-text">
-                    Note: All the tips, tricks shared in this article are part
-                    of my GitHub repository css tips tricks A handmade
-                    collection of pro css tips tricks for developers.
-                  </p>
-                </div>
-                <div class="article-info">
-                  <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
-                    >Continue reading</a
-                  >
-                  <span class="reaction-count">
-                    <img src="./assets/images/heart-outline.svg" alt="heart" />
-                    416
-                  </span>
-                </div>
-              </div>
-              <picture class="article-illustration">
-                <img
-                  src="assets/images/featured-blog.webp"
-                  alt="MacBook Pro"
-                  loading="lazy"
-                />
-              </picture>
-            </article>
-            <article class="article-box">
-              <div class="article-textbox">
-                <div>
-                  <h3 class="h4">JavaScript Default Function Parameters.</h3>
-                  <p class="article-text">
-                    In JavaScript when we call a function which expects some
-                    data to be passed in if you call that without passing
-                  </p>
-                </div>
-                <div class="article-info">
-                  <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
-                    >Continue reading</a
-                  >
-                  <span class="reaction-count">
-                    <img
-                      src="./assets/images/heart-outline.svg"
-                      alt="heart"
-                      loading="lazy"
-                    />
-                    47
-                  </span>
-                </div>
-              </div>
-            </article>
-            <article class="article-box">
-              <div class="article-textbox">
-                <div>
-                  <h3 class="h4">
-                    Free Open-source portfolio template for developers ✨
-                  </h3>
-                  <p class="article-text">
-                    A beautiful, minimal and accessible portfolio template for
-                    Developers which is completely free and Open Source.
-                  </p>
-                </div>
-                <div class="article-info">
-                  <a href="https://dev.to/devsyedmohsin/free-open-source-portfolio-template-for-developers-4g1d" class="link" target="_blank" rel="noopener"
-                    >Continue reading</a
-                  >
-                  <span class="reaction-count">
-                    <img
-                      src="./assets/images/heart-outline.svg"
-                      alt="heart"
-                      loading="lazy"
-                    />
-                    177
-                  </span>
-                </div>
-              </div>
-            </article>
-            <article class="article-box">
-              <div class="article-textbox">
-                <div>
-                  <h3 class="h4">HTML tips and tricks.</h3>
-                  <div class="article-text">
-                    In my very last article I shared some JavaScript tips and
-                    tricks In this article I will be covering HTML tips and
-                    tricks.
-                  </div>
-                </div>
-                <div class="article-info">
-                  <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
-                    >Continue reading</a
-                  >
-                  <span class="reaction-count">
-                    <img
-                      loading="lazy"
-                      src="./assets/images/heart-outline.svg"
-                      alt="heart"
-                    />
-                    350
-                  </span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
-
-      <section class="skills">
-        <div class="container">
-          <h2 class="h2" id="skills">My Toolkit</h2>
-          <div class="skills-imgs">
-                <img src="assets/images/skills/react.webp" alt="React" class="skills-img" loading="lazy" title="React">
-                <img src="assets/images/skills/svelte.webp" alt="Svelte" class="skills-img" loading="lazy" title="Svelte">
-                 <img src="assets/images/skills/typescript.webp" alt="Typescript" class="skills-img" loading="lazy" title="Typescript">
-                 <img src="assets/images/skills/a11y.webp" alt="Accessibility" class="skills-img" loading="lazy" title="Web Accessibility">
-                 <img src="assets/images/skills/shell.webp" alt="Shell" class="skills-img" loading="lazy" title="Shell">
-                 <img src="assets/images/skills/next-js.webp" alt="NextJS" class="skills-img" loading="lazy" title="NextJS">
-                 <img src="assets/images/skills/graphql.webp" alt="Graph Ql" class="skills-img" loading="lazy" title="Graph QL">
-                 <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
-                 <img src="assets/images/skills/html.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
-                 <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- Replace testimonials, author name, author job, img src and, alt attributes -->
-
-      <section>
-        <h2 class="h2">Testimonials</h2>
-        <div class="container">
-          <ol class="testimonials">
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                Working with Syed was a great experience. His drive for clean aesthetics and his open communication style helped us collaborate closely on the solution.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/rich-harris.png"
-                  alt="Rich Harris"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Harris Kareem</h3>
-                  <p class="testimonial-author-job">Developer @Outlets</p>
-                </figcaption>
-              </figure>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Update href and src attributes -->
+        <nav>
+          <ol class="footer-links">
+            <li class="footer-link">
+              <a title="Instagram" href="https://www.instagram.com/oviktorbernardo" target="_blank" rel="noopener"><img
+                  loading="lazy" src="assets/images/social-links/instagram.svg" alt="Instagram" /></a>
             </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                Syed is a fantastic UI/UX designer and developer with a keen sense for marketing, and lead generation. He's the only designer I know who also has a deep understanding for code and front-end development.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/frank-mcsherry.webp"
-                  alt="Andrew Mead"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">
-                   Andrew Mead
-                  </h3>
-                  <p class="testimonial-author-job">Chief Scientist @Logos
-                  </p>
-                </figcaption>
-              </figure>
+            <li class="footer-link">
+              <a title="Substack" href="https://oviktorbernardo.substack.com/" target="_blank" rel="noopener"><img
+                  loading="lazy" src="assets/images/social-links/substack.svg" alt="Substack" /></a>
             </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-             
-                Talented artist, experienced with various
-                media and can make any project you are working on look good. He is
-                easy to work with and is a self starter. I would work with Syed
-                again.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/brian-hirsh.png"
-                  alt="Brian Hirsh"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Brian Hirsh</h3>
-                  <p class="testimonial-author-job">Head @Zero-in</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                Syed is a true professional with amazing talent. He is a creative
-                thinker, has his finger on the pulse of whats to come, and
-                absolutely one of the quickest and best problem solvers I have
-                ever met.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/adam.png"
-                  alt="Adam Argalye"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Adam Argalye</h3>
-                  <p class="testimonial-author-job">SWE @Google</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-               Syed is one of my favourite people to work with. He's my go-to colleague when trouble shooting any new technique or technology because she understands how to tackle unknown problems with gumption. 
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/val-head.png"
-                  alt="Val Head"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Val Head</h3>
-                  <p class="testimonial-author-job">CEO @Engines</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="testimonial">
-              <blockquote class="testimonial-text">
-                Syed is a talented artist. He is very experienced with various
-                media and can make any project you are working on look good. He is
-                easy to work with and is a self starter. I would work with Syed
-                again.
-              </blockquote>
-              <figure class="testimonial-author">
-                <img
-                  src="assets/images/testimonials/tim-satterwhite.webp"
-                  alt="Gary Simon"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3 class="testimonial-author-name">Gary Simon</h3>
-                  <p class="testimonial-author-job">A11y Advocate @W3C</p>
-                </figcaption>
-              </figure>
+            <li class="footer-link">
+              <a title="Bluesky" href="https://bsky.app/profile/oviktorbernardo.crvg.me" target="_blank"
+                rel="noopener"><img loading="lazy" src="assets/images/social-links/bluesky.svg" alt="Bluesky" /></a>
             </li>
           </ol>
-        </div>
-      </section>
-
-      <section class="contact">
-        <div class="container">
-          <h2 class="h2" id="contact">Send Message</h2>
-          <div class="contact-content">
-            <div class="contact-textbox">
-              <!-- Please comment this component if you're not available for hire -->
-              <strong href="#" class="hire-alert">
-                <span class="indicator"></span>
-                Available for hire
-              </strong>
-              <p class="contact-text">
-                As a software engineer, I construct web interfaces and design
-                systems with a special love for accessibility and the
-                performance. I tend to code things from scratch and enjoy
-                bringing ideas to life.
-              </p>
-              <p class="contact-text">
-                I'm also an open-source developer, and in my spare time, I do
-                digital art with my iPad Pro.
-              </p>
-              <!-- Replace src with your signatures and name -->
-              <img
-                src="assets/images/signatures.png"
-                alt="Syed Mohsin"
-                class="signatures"
-                loading="lazy"
-              />
-            </div>
-            <form action="#" class="contact-form" netlify>
-              <div class="form-field">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required />
-              </div>
-              <div class="form-field">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  required
-                  inputmode="email"
-                />
-              </div>
-              <div class="form-field">
-                <label for="message">How can I help you?</label>
-                <textarea name="message" id="message" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-cta">Send</button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <!-- Update href and src attributes -->
-          <nav>
-            <ol class="footer-links">
-              <li class="footer-link">
-                <a title="GitHub" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/github.svg"
-                    alt="GitHub"
-                /></a>
-              </li>
-              <li class="footer-link">
-                <a title="Codepen" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/codepen.svg"
-                    alt="Codepen"
-                /></a>
-              </li>
-              <li class="footer-link">
-                <a title="Linkedin" href="https://www.linkedin.com/in/syed-mohisn-raza-393177262/" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/linkedin.svg"
-                    alt="Linkedin"
-                /></a>
-              </li>
-              <li class="footer-link">
-                <a title="Twitter" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
-                  ><img
-                    loading="lazy"
-                    src="assets/images/social-links/twitter.svg"
-                    alt="Twitter"
-                /></a>
-              </li>
-            </ol>
-          </nav>
-          <p class="footer-text">
-            &copy; <span>2024</span> - Template designed & developed by <a target="_blank" rel="noopener" href="https://github.com/devsyedmohsin">Syed Mohsin.</a>
-          </p>
-          <label class="theme-switch" for="theme-switch">
-            <span>Dark Theme</span>
-            <input type="checkbox" id="theme-switch" role="switch"/>
-          </label>
-        </div>
+        </nav>
+        <p class="footer-text">
+          &copy; <span>2024</span> - Template designed & developed by <a target="_blank" rel="noopener"
+            href="https://github.com/devsyedmohsin">Syed Mohsin.</a>
+        </p>
+        <p class="footer-text">Edited by <a target="_blank" rel="noopener" href="https://github.com/ashtrindade">Ash
+            Trindade.</a>
+        </p>
+        <label class="theme-switch" for="theme-switch">
+          <span>Tema escuro</span>
+          <input type="checkbox" id="theme-switch" role="switch" />
+        </label>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
